@@ -44,6 +44,10 @@ body{
     background-color: #406882;
     color: #ffffff;
 }
+.key.active{
+    background-color: #406882;
+    color: #ffffff;
+}
 
 .wide{
     width: 120px;
