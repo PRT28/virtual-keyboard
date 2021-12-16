@@ -1,10 +1,26 @@
 var keys=document.querySelectorAll(".key");
+var keyboard=document.querySelector(".keyboard");
 var space = document.querySelector(".space");
 var back = document.querySelector(".bs");
 var enter = document.querySelector(".enter");
 var cap = document.querySelector(".cs");
 var text = document.querySelector(".ip");
+var keyColor = document.getElementById("k");
+var kbColor = document.getElementById("kb");
 var flag=0;
+
+keyColor.addEventListener("input",changeKey);
+kbColor.addEventListener("input",changeKb);
+
+function changeKey(){
+    for(let i=0;i<keys.length;i++){
+        keys[i].style.backgroundColor = keyColor.value;
+    }
+}
+
+function changeKb(){
+    keyboard.style.backgroundColor = kbColor.value;
+}
 
 function caps(){
     if(flag==0){
